@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Gestión de Vuelos</title>
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; padding-bottom: 70px;">
+        <h1>Compañía Argentina</h1>
+            <div style="justify-content: center; padding-top: 30px;">
+                <label for="modo">Modo oscuro</label>
+                <input type="checkbox" name="" id="modo">
+            </div>
+    </header>
+    <main style="display: flex; justify-content: space-between; padding-bottom: 200px;">
+        <div style="display: flex; flex-direction: column-reverse; flex-wrap: nowrap;">    
+            <h2>Gestión de Vuelos</h2>
+            <nav>
+                <a href="#">Registrar usuario</a><br>
+                <a href="#">Consultar vuelos disponibles/reservar</a><br>
+                <a href="#">Ver reservas realizadas</a><br>
+                <a href="#">Eliminar reservas realizadas</a><br>
+            </nav>
+        </div>
+        <section>
+            <form action="pagina2.html">
+                <label for="origen">Selección de Origen</label><br>
+                <select name="" id="origen" required>
+                    <option value=""></option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Tucumán">Tucumán</option>
+                    <option value="Mendoza">Mendoza</option>
+                </select><br>
+                <label for="destino">Selección de Destino</label><br>
+                <select name="" id="destino" required>
+                    <option value=""></option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Tucumán">Tucumán</option>
+                    <option value="Mendoza">Mendoza</option>
+                </select><br>
+                <label for="fecha">Fecha de vuelo</label>
+                <input type="date" name="" id="fecha" required>
+                <div style="padding-top: 30px;">
+                    <button type="submit">Buscar</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Sitio Oficial de Compañía Argentina-2025</p>
+    </footer>
+</body>
+</html>
