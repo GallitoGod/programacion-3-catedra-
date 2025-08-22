@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Gestión de Vuelos</title>
+</head>
+<body>
+    <header>
+        <h1>Compañía Argentina</h1>
+    </header>
+    <hr style="padding-bottom: 70px;">
+    <main>
+        <form action="pagina2.html">
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr);">
+                <div style="display: block;">
+                    <label for="origen">Origen</label>
+                    <select disabled name="origen" id="">
+                        <option value=""></option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Tucumán">Tucumán</option>
+                        <option value="Mendoza">Mendoza</option>
+                    </select>
+                </div>
+                <div style="display: block;">
+                    <label for="destino">Destino</label>
+                    <select disabled name="destino" id="">
+                        <option value=""></option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Tucumán">Tucumán</option>
+                        <option value="Mendoza">Mendoza</option>
+                    </select>
+                </div>
+                <div style="display: block;">
+                    <label for="fecha-de-vuelo">Fecha de vuelo</label>
+                    <input disabled type="date" name="fecha-de-vuelo" id="">
+                </div>
+                <div style="display: block;">
+                    <label for="hora_de_vuelo">Hora de vuelo</label>
+                    <input disabled type="time" name="hora-de-vuelo" id="">
+                </div>
+        
+                <div style="display: block; padding-top: 20px;">
+                    <label for="clases">Clases</label>
+                    <select required name="clases" id="">
+                        <option value=""></option>
+                        <option value="">Ejecutiva</option>
+                        <option value="">Económica</option>
+                    </select>
+                </div>
+                <div style="display: block; padding-top: 20px;">
+                    <label for="">Cantidad de Pasajes</label>
+                    <input required type="number" min="1" max="50">
+                </div>
+                <div style="display: block; padding-top: 20px;">
+                    <label for="">Selección de Ubicación</label>
+                    <select required name="" id="">
+                        <option value=""></option>
+                        <option value="">Ventanilla</option>
+                        <option value="">Centro</option>
+                        <option value="">Pasillo</option>
+                    </select>
+                </div>
+                <div style="display: block; padding-top: 20px;">
+                    <label for="">Selección de Nro de Silla</label>
+                    <input required type="number" min="1" max="50">
+                </div>
+            </div>
+            <label style="padding-top: 20px;" for="">Apellido y Nombre</label>
+            <input required type="text" max="100">
+            <label style="padding-top: 20px;" for="">DNI</label>
+            <input required type="numeric" min="8" max="8">
+            <label style="padding-top: 20px;" for="">Fecha de Nacimiento</label>
+            <input required type="date">
+            <div style="display: block; padding-top: 20px;">
+                <label for="sexo">Sexo</label>
+                <div style="display: flex; gap: 20px;">
+                    <div style="display: flex;">
+                        <input type="radio" name="sexo">
+                        <label for="">M</label>
+                    </div>
+                    <div style="display: flex;">
+                        <input type="radio" name="sexo">
+                        <label for="">F</label>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; gap: 20px; padding-top: 30px;">
+                <button type="reset">Cancelar</button>
+                <button type="submit">Aceptar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Sitio Oficial de Compañía Argentina-2025</p>
+    </footer>
+</body>
+</html>
