@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="/programacion-3-catedra-/css/styles.css">
     <title>Gestión de Vuelos</title>
 </head>
 <body>
     <header>
         <h1>Compañía Argentina</h1>
+        <hr>
+        <nav class="nav-header">
+            <a href="#">Registrar usuario</><br>
+            <a href="#">Consultar vuelos disponibles/reservar</a><br>
+            <a href="#">Ver reservas realizadas</a><br>
+            <a href="#">Eliminar reservas realizadas</a><br>
+        </nav>
     </header>
-    <hr style="padding-bottom: 70px;">
-    <main style="display: flex; justify-content: space-between; padding-bottom: 200px;">
-        <div style="display: column; ">    
-            <h2>Gestión de Vuelos</h2>
-            <nav style="display: grid; grid-template-rows: auto;">
-                <a href="#">Registrar usuario</a><br>
-                <a href="#">Consultar vuelos disponibles/reservar</a><br>
-                <a href="#">Ver reservas realizadas</a><br>
-                <a href="#">Eliminar reservas realizadas</a><br>
-            </nav>
-        </div>
+    <main>
+        <h2>Gestión de Vuelos</h2>
         <section>
             <form action="pagina2.html">
                 <label for="origen">Selección de Origen</label><br>
@@ -39,7 +37,7 @@
                 </select><br>
                 <label for="fecha">Fecha de vuelo</label>
                 <input type="date" name="" id="fecha" required>
-                <div style="padding-top: 30px;">
+                <div>
                     <button type="submit">Buscar</button>
                     <button type="reset">Cancelar</button>
                 </div>
@@ -47,6 +45,7 @@
         </section>
     </main>
     <footer>
+        <hr>
         <p>Sitio Oficial de Compañía Argentina-2025</p>
     </footer>
 </body>

@@ -1,0 +1,185 @@
+:root {
+    --background-body: #202b38;
+    --background: #161f27;
+    --background-alt: #1a242f;
+    --selection: #1c76c5;
+    --text-main: #dbdbdb;
+    --text-bright: #fff;
+    --text-muted: #a9b1ba;
+    --links: #41adff;
+    --focus: #0096bfab;
+    --border: #526980;
+    --button-base: #0c151c;
+    --button-hover: #040a0f;
+    --form-placeholder: #a9a9a9;
+    --form-text: #fff;
+}
+
+html {
+    background-color: var(--background-body);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    max-width: 800px;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+}
+footer {
+    max-width: 800px;
+    width: 100%;
+    padding-top: 10%;
+}
+
+button {
+    color: var(--text-bright);
+    background-color: var(--button-base);
+    font-family: inherit;
+    font-size: inherit;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+button:hover {
+    background: #9b9b9b;
+    background: var(--button-hover);
+    cursor: pointer;
+}
+
+input {
+    color: var(--form-placeholder);
+    background-color: var(--background);
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:hover {
+    background: #9b9b9b;
+    color: #fff;
+    background: var(--button-hover);
+    cursor: pointer;
+}
+
+textarea {
+    color: var(--form-placeholder);
+    background-color: var(--background);
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+select {
+  color: var(--form-placeholder);
+  background-color: var(--background);
+  font-family: inherit;
+  font-size: inherit;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--links);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    color: var(--form-text);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid var(--border);
+}
+
+p {
+    color: var(--text-muted);
+}
+
+.nav-header {
+    display: flex;
+    gap: 1%;
+}
+
+.form-div {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.label-container-under {
+    display: block; 
+    padding-top: 20px;
+}
+
+.label-up {
+    padding-top: 20px;
+}
+
+.radio-form {
+    display: flex;
+}
+
+.sex-form {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.buttoner-container {
+    display: flex; 
+    flex-direction: row;
+    gap: 20px; 
+    padding-top: 30px;
+}
+
+.block-label {
+    display: block;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+}
