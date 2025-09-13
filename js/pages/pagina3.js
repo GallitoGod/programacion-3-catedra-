@@ -2,7 +2,7 @@ import { Modelo } from "../Modelo.js"
 import { View } from "../View.js"
 
 
-export function init() {
+export function pagina3() {
     const view = new View
     const modelo = new Modelo
     view.setModelo(modelo)

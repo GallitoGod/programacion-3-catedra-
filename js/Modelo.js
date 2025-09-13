@@ -16,7 +16,8 @@ export class Modelo {
                     fechaNac: 0,
                     sexo: "sexo1",
                     clase: "clase1",
-                    ubicacion: "ubicacion1"
+                    ubicacion: "ubicacion1",
+                    nroSilla: 1
                 },
             ]
             this.currentId = 1
@@ -45,7 +46,8 @@ export class Modelo {
             fechaNac: value.fechaNac,
             sexo: value.sexo,
             clase: value.clase,
-            ubicacion: value.ubicacion
+            ubicacion: value.ubicacion,
+            nroSilla: value.nroSilla
         }
         this.reservas.push(reserva)
         this.save()
@@ -57,7 +59,7 @@ export class Modelo {
     }
 
     findReserva(id) {
-        return this.reservas.findIndex(reserva => {reserva.id === id})
+        return this.reservas.findIndex(reserva => reserva.id === id)
     }
 
     removeReserva(id) {

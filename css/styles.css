@@ -254,3 +254,7 @@ tbody tr:nth-child(even) {
     color: var(--text-bright);
     background-color: var(--background);
 }
+
+.buttoner-form {
+    padding-top: 3%;
+}

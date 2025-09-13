@@ -26,7 +26,7 @@
                 <li><a href="#">Eliminar reservas realizadas</a></li>
             </ul>
         </section>
-        <form action="pagina2.html">
+        <form id="form-pag2" action="pagina2.html">
             <div class="second-form-container">
                     <div>
                         <label for="origen">Origen</label><br>
@@ -55,20 +55,20 @@
                         <input disabled type="time" name="hora-de-vuelo" id="">
                     </div>        
                     <div class="sec-grid">
-                        <label for="clases">Clases</label><br>
-                        <select required name="clases" id="">
+                        <label for="clases">Clase</label><br>
+                        <select required name="clases" id="clases">
                             <option value=""></option>
-                            <option value="">Ejecutiva</option>
-                            <option value="">Económica</option>
+                            <option value="Ejecutiva">Ejecutiva</option>
+                            <option value="Económica">Económica</option>
                         </select>
                     </div>
                     <div class="sec-grid">
-                        <label for="">Cantidad de Pasajes</label><br>
-                        <input required type="number" min="1" max="50">
+                        <label for="">Cantidad de pasajes</label><br>
+                        <input required type="number" min="1" max="50" id="pasajes">
                     </div>
                     <div class="sec-grid">
-                        <label for="">Selección de Ubicación</label><br>
-                        <select required name="" id="">
+                        <label for="">Ubicación</label><br>
+                        <select required name="" id="ubicaciones">
                             <option value=""></option>
                             <option value="">Ventanilla</option>
                             <option value="">Centro</option>
@@ -76,10 +76,16 @@
                         </select>
                     </div>
                     <div class="sec-grid">
-                        <label for="">Selección de Nro de Silla</label><br>
-                        <input required type="number" min="1" max="50">
+                        <label for="">Numero de silla</label><br>
+                        <input required type="number" min="1" max="50" id="N-sillas">
                     </div>
             </div>
+            <div class="buttoner-form">
+                <button type="reset">Cancelar</button>
+                <button type="submit">Aceptar</button>
+            </div>
+        </form>
+        <form id="second-form-pag2" action="" hidden method="post">
             <div class="second-form-container-nm">
                 <div>
                     <label for="">Apellido y Nombre</label><br>
@@ -105,7 +111,7 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="buttoner-form">
                 <button type="reset">Cancelar</button>
                 <button type="submit">Aceptar</button>
             </div>
