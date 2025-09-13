@@ -1,3 +1,4 @@
+//Por ahora lo dejo asi, no se como tenga que alterarlo asi que tampoco lo voy a mover de la carpeta raiz de js al igual que View.js
 export class Modelo {
     constructor() {
         this.view = null

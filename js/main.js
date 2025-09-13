@@ -1,25 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const btnNav = document.getElementById('nav-switch')
-    const nav = document.getElementById('nav-section')
 
-    const date = document.getElementById('fecha')
-    date.addEventListener('change', (e) => {
-        const obj = new Date()
-        const inputDate = new Date(e.target.value)
-        if (obj > inputDate) {
-            return "Fecha de Vuelo debe ser Mayor a la Fecha Actual"
-        } else return true
-    })
+import { mountHeader } from './header.js'
 
-    function toggleMenu() {
-        nav.hidden = !(nav.hidden)
+document.addEventListener('DOMContentLoaded', () => {
+    mountHeader()
+
+    const page = document.body.dataset.page
+    initPage(page)
+}) 
+
+async function initPage(page) {
+    try {
+        const mod = await import(`./pages/${page}.js`)
+        mod?.init?.()
+    } catch {
+
     }
-    
-    btnNav.addEventListener('click', toggleMenu)
-
-    document.addEventListener('click', (e) => {
-        if (!nav.contains(e.target) && !btnNav.contains(e.target) && nav.hidden == false) {
-            toggleMenu()
-        }
-    })
-})
+}
