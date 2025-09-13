@@ -106,6 +106,13 @@ select {
   outline: none;
 }
 
+select:hover {
+    background: #9b9b9b;
+    color: #fff;
+    background: var(--button-hover);
+    cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -211,4 +218,38 @@ p {
     .second-form-container {
         display: block;
     }
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    text-align: left;
+}
+
+td,
+th {
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+
+thead {
+    color: var(--text-bright);
+    border-bottom: 1px solid var(--border);
+}
+
+tfoot {
+    color: var(--text-bright);
+    border-top: 1px solid var(--border);
+}
+
+tbody tr:nth-child(even) {
+    color: var(--text-bright);
+    background-color: var(--background);
 }
