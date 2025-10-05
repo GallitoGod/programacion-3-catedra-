@@ -4,9 +4,9 @@ export function pagina1() {
         const obj = new Date()
         const inputDate = new Date(e.target.value)
         if (obj > inputDate) {
-            e.target.setCustomValidity('Fecha de vuelo debe ser mayor a la actual');
-            e.target.reportValidity();
-        } else e.target.setCustomValidity('');
+            e.target.setCustomValidity('Fecha de vuelo debe ser mayor a la actual')
+            e.target.reportValidity()
+        } else e.target.setCustomValidity('')
     })
 
     const origen = document.getElementById('origen')
