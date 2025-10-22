@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form action="{% url 'estudiantes:agregar' %}" method="POST">
+        {% csrf_token %}
+        <label for="nombre">Nombre</label>
+        <input required name="nombre" type="text"><br>
+        <label for="apellido">Apellido</label>
+        <input required name="apellido" type="text"><br>
+        <label for="edad">Edad</label>
+        <input required name="edad" type="text"><br>
+        <label for="curso">Curso</label>
+        <select name="curso" id="">
+            {% for curso in cursos %}
+            <option value="{{ curso.id }}"> {{ curso.nombre }}</option>
+            {% endfor %}
+        </select><br>
+        <label for="nota_curso">Nota de curso</label>
+        <input required name="nota_curso" type="number"><br>
+        <button type="submit">Agregar</button>
+    </form>
+
+    {% if resultado %}
+    <p>resultado</p>
+    {% endif %}
+
+{% endblock %}
