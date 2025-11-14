@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from  .models import Estudiante, Curso
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-
+@login_required(login_url='usuario:login')
 def cargar_estudiante(request):
     if request.method == "POST":
         nombre = request.POST['nombre']
@@ -22,12 +23,14 @@ def cargar_estudiante(request):
         return render(request, 'crear_estudiante.html', {'cursos': cursos})
     
 
+@login_required(login_url='usuario:login')
 def tabla_estudiantes(request):
     estudiantes = Estudiante.objects.all()
     print(estudiantes)
     return render(request, 'estudiantes.html', {'estudiantes': estudiantes})
 
 
+@login_required(login_url='usuario:login')
 def detalles_curso(request):
     cursos = Curso.objects.all()
     curso_id = request.GET.get('curso')
